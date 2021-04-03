@@ -62,7 +62,7 @@ begin
          Env               => Env,
          Packages_To_Check => All_Packs);
 
-      -- Prepare the spec using the root project
+      --  Prepare the spec using the root project
       Spec.Prepare_From_Project
         (Spec_Project => Tree.Root_Project,
          Spec_Valid   => Spec_Valid);
