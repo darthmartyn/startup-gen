@@ -21,7 +21,8 @@ with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 package Number_Input is
 
-   function Valid (Str : String) return Boolean;
+   function Valid (Str : String) return Boolean
+     with Pre => Str'Length /= 0;
 
    function Valid (Str : Unbounded_String) return Boolean
    is (Valid (To_String (Str)));
